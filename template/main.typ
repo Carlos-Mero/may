@@ -1,8 +1,8 @@
 #import "@preview/may:0.0.1": *
-#show: may_sans
+#show: may-sans
 // Some other variants
 // #show: may
-// #show: may_serif
+// #show: may-serif
 
 = May
 

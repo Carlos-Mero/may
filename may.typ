@@ -1,5 +1,5 @@
 // package dependancies and show rules
-#import "@preview/physica:0.9.3": *
+#import "@preview/physica:0.9.5": *
 #import "@preview/wrap-it:0.1.1": wrap-content
 
 #show: super-T-as-transpose
@@ -173,7 +173,7 @@
   #_may(doc)
 ]
 
-#let may_serif(doc) = [
+#let may-serif(doc) = [
   #set text(
     font: ("Libertinus Serif", "LXGW Neo ZhiSong"),
     lang: "zh",
@@ -185,7 +185,7 @@
   #_may(doc)
 ]
 
-#let may_sans(doc) = [
+#let may-sans(doc) = [
   #set text(
     font: ("Libertinus Sans", "LXGW Wenkai"),
     lang: "zh",

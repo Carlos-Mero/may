@@ -8,7 +8,7 @@ This is my personal typst template designedfor homework, report or some other do
 
 ```typst
 #import "@preview/may:0.0.1": *
-#show: may_sans
+#show: may-sans
 // ...
 // Your typst documents here
 ```
@@ -39,4 +39,4 @@ You are welcomed to create new PRs to this repository and help improve this temp
 
 ## Show Case
 
-![](./thumbnail.png)
+![thumbnail of may_sans template](./thumbnail.png)
