@@ -1,6 +1,5 @@
 // package dependancies and show rules
 #import "@preview/physica:0.9.5": *
-#import "@preview/wrap-it:0.1.1": *
 #import "@preview/touying:0.6.1": *
 
 #show: super-T-as-transpose
@@ -73,7 +72,7 @@
     stroke: none,
     gutter: 0.2em,
     align: center,
-    fill: (x, y) => if y == 0 {sea},
+    fill: (x, y) => if y == 0 {sea} else {skyll},
   )
   #show table.cell: it => {
     if it.y == 0 {
@@ -124,14 +123,15 @@
     level: 1
   ): it => [
     #set align(center)
-    #set text(
+    #block(
       fill: sea,
-      size: 1.42em,
-      weight: "bold",
-      style: "normal",
+      width: 100% + 2cm,
+      inset: (y: 0.46em),
+      text(size: 1.42em, fill: paper, weight: "bold", it.body),
     )
-    #it.body
-    #subline()
+    #v(-1em)
+    #line(length: 100% + 2cm, stroke: sea)
+    #v(0.4em)
   ]
   #show heading.where(
     level: 2
@@ -271,6 +271,8 @@
   let info = self.info + args.named()
   let body = {
     set align(center + horizon)
+    line(length: 100%, stroke: self.colors.neutral-dark)
+    v(-0.9em)
     block(
       fill: self.colors.neutral-dark,
       width: 100%,
@@ -345,28 +347,29 @@
     self,
     config-page(
       background: img,
-      margin: (x: 2em, y: 1.4em),
+      margin: (x: 0em, y: 1.4em),
     ),
   )
   set text(fill: self.colors.neutral-dark, size: 1.4em)
   set image(width: 100%, height: auto)
   touying-slide(self: self, align(left + bottom,
-    block(
-      fill: self.colors.neutral-lighter,
-      inset: (x: 0.4em, y: 0em),
-      if body != none {
-        line(start: (-0.4em, 0em), length: 100% + 0.8em, stroke: self.colors.neutral-dark)
+    align(
+      center,
+      block(
+        fill: self.colors.neutral-lighter,
+        if body != none {
+        line(length: 100%, stroke: self.colors.neutral-dark)
         v(-0.85em)
         body
         v(-0.85em)
-        line(start: (-0.4em, 0em), length: 100% + 0.8em, stroke: self.colors.neutral-dark)
+        line(length: 100%, stroke: self.colors.neutral-dark)
       }
-    )))
+      ))))
 })
 
 #let may-pre(
   aspect-ratio: "16-9",
-  footer: self => self.info.institution,
+  footer: self => self.info.title,
   ..args,
   body,
 ) = {

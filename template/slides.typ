@@ -1,4 +1,5 @@
-#import "@preview/may:0.1.0": *
+#import "@preview/may:0.1.1": *
+#import "@preview/wrap-it:0.1.1": *
 
 #show: may-pre.with(
   config-info(

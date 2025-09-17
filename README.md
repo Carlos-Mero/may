@@ -7,7 +7,7 @@ A simple and elegant document template for multiple daily tasks.
 This is my personal typst template designedfor homework, report or some other documents. You can obtain the same styles of this template by simply adding the follows two lines at the top of your document:
 
 ```typst
-#import "@preview/may:0.1.0": *
+#import "@preview/may:0.1.1": *
 #show: may-sans
 // ...
 // Your typst documents here
@@ -26,7 +26,7 @@ This will create a new folder named `may` in the current path, along with a samp
 We also provide a touying theme that is great for presentations! You can create slides in may theme as simple as adding these lines at the top:
 
 ```typst
-#import "@preview/may:0.1.0": *
+#import "@preview/may:0.1.1": *
 
 #show: may-pre.with(
   config-info(
@@ -65,13 +65,13 @@ You are welcomed to create new PRs to this repository and help improve this temp
 
 **Slides Template Preview**
 
-![showcase for may slides](showcases/slide.jpg)
-![showcase for may slides](showcases/slide1.jpg)
-![showcase for may slides](showcases/slide2.jpg)
-![showcase for may slides](showcases/slide3.jpg)
-![showcase for may slides](showcases/slide4.jpg)
-![showcase for may slides](showcases/slide5.jpg)
+![showcase for may slides](showcases/slides.jpg)
+![showcase for may slides](showcases/slides1.jpg)
+![showcase for may slides](showcases/slides2.jpg)
+![showcase for may slides](showcases/slides3.jpg)
+![showcase for may slides](showcases/slides4.jpg)
+![showcase for may slides](showcases/slides5.jpg)
 
 ## Dependencies
 
-This template pre-includes these typst packages along with it. they are [physica](https://typst.app/universe/package/physica/), [wrap-it](https://typst.app/universe/package/wrap-it/), [touying](https://typst.app/universe/package/touying/). So you can directly access the functionalities without explicit importing them in you project with may.
+This template pre-includes these typst packages along with it. they are [physica](https://typst.app/universe/package/physica/), [touying](https://typst.app/universe/package/touying/). So you can directly access the functionalities without explicit importing them in you project with may.
