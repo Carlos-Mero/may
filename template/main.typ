@@ -1,4 +1,4 @@
-#import "@preview/may:0.1.1": *
+#import "@preview/may:0.1.2": *
 #import "@preview/wrap-it:0.1.1": *
 #show: may
 // Some other variants
@@ -27,6 +27,8 @@
 )
 
 == Codeblocks and Formulas
+
+Inline raw code such as `mean + sigma * noise` now stays inline and fenced code stays block-level.
 
 $
 vb(x)_(t+1) &= sqrt(macron(alpha)_t) vb(x)_0 + sqrt(1 - macron(alpha)_t) vb(epsilon) quad &"Forward"\

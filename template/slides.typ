@@ -1,4 +1,4 @@
-#import "@preview/may:0.1.1": *
+#import "@preview/may:0.1.2": *
 #import "@preview/wrap-it:0.1.1": *
 
 #show: may-pre.with(
@@ -36,6 +36,8 @@ A slide with a title and an *important* information
 #lorem(30)
 
 == Formulas and Codeblocks
+Inline code such as `eps = model(x_t, t)` now uses a compact inline decoration.
+
 $
 vb(x)_(t+1) &= sqrt(macron(alpha)_t) vb(x)_0 + sqrt(1 - macron(alpha)_t) vb(epsilon) quad &"Forward"\
 vb(x)_(t-1) &= 1/sqrt(1 - beta_t) (vb(x)_t - (beta_t)/sqrt(1 - macron(alpha)_t) vb(epsilon)_theta (vb(x)_t, t)) + sqrt(beta_t) vb(epsilon) quad &"Backward"

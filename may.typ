@@ -15,8 +15,19 @@
   doc,
   code-font: "Maple Mono",
 ) = [
+  // Inline code
+  #show raw.where(block: false): it => {
+    set text(font: code-font, size: 0.9em)
+    box(
+      fill: skyl,
+      inset: (x: 0.35em, y: 0.15em),
+      radius: 0.25em,
+      it,
+    )
+  }
+
   // Codeblocks
-  #show raw: it => {
+  #show raw.where(block: true): it => {
     set text(font: code-font, size: 0.9em)
     block(
       width: 100%,
