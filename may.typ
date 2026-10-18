@@ -97,7 +97,7 @@
 
 #let _may(
   doc,
-  font: ("Libertinus Sans", "LXGW Wenkai"),
+  font: ("Libertinus Sans", "霞鶩文楷"),
   code-font: "Maple Mono",
   base-size: 3.56mm,
   lang: "en",
@@ -201,20 +201,20 @@
 ]
 
 #let may-serif(doc) = [
-  #show: _may.with(font: ("Libertinus Serif", "LXGW Neo ZhiSong"))
+  #show: _may.with(font: ("Libertinus Serif", "霞鹜新致宋"))
   #doc
 ]
 
 #let may(doc) = [
   #show: _may.with(
-    font: ("Libertinus Sans", "LXGW Wenkai"),
+    font: ("Libertinus Sans", "霞鶩文楷"),
   )
   #doc
 ]
 
 #let may-sans(doc) = [
   #show: _may.with(
-    font: ("Libertinus Sans", "LXGW Wenkai"),
+    font: ("Libertinus Sans", "霞鶩文楷"),
   )
   #doc
 ]

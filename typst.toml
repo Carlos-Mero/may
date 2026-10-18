@@ -1,6 +1,6 @@
 [package]
 name = "may"
-version = "0.1.2"
+version = "0.1.3"
 entrypoint = "may.typ"
 authors = ["Carlos-Mero <https://github.com/Carlos-Mero>"]
 license = "MIT"
