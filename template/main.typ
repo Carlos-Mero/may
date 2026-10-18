@@ -1,4 +1,4 @@
-#import "@preview/may:0.1.2": *
+#import "@preview/may:0.1.3": *
 #import "@preview/wrap-it:0.1.1": *
 #show: may
 // Some other variants

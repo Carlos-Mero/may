@@ -7,7 +7,7 @@ A simple and elegant document template for multiple daily tasks.
 This is my personal typst template designedfor homework, report or some other documents. You can obtain the same styles of this template by simply adding the follows two lines at the top of your document:
 
 ```typst
-#import "@preview/may:0.1.2": *
+#import "@preview/may:0.1.3": *
 #show: may-sans
 // ...
 // Your typst documents here
@@ -28,7 +28,7 @@ This will create a new folder named `may` in the current path, along with a samp
 We also provide a touying theme that is great for presentations! You can create slides in may theme as simple as adding these lines at the top:
 
 ```typst
-#import "@preview/may:0.1.2": *
+#import "@preview/may:0.1.3": *
 
 #show: may-pre.with(
   config-info(
